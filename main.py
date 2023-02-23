@@ -110,6 +110,8 @@ def sborka(url=""):
     df = pd.DataFrame(data)
     df.to_csv("pandas0001.csv", sep=';', encoding='utf-8-sig', index=False)
     df.to_json("pandas0001.json", orient='index')
+    
+    del df
 
 
 def main():
